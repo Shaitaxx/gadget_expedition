@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: gadget_expedition_production
-  username: gadget_expedition
-  password: <%= ENV['GADGET_EXPEDITION_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
